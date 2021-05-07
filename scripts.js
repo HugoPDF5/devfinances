@@ -12,7 +12,7 @@ const Storage = {
         return JSON.parse(localStorage.getItem('dev.finances:transactions')) || []
     },
 
-    set(transaction){
+    set(transactions){
         localStorage.setItem('dev.finances:transactions', JSON.stringify(transactions))
     }
 }
@@ -131,10 +131,11 @@ const Form = {
 
         }
     },
+    
     validateFields(){
         const { description,amount,date } = Form.getValues()
 
-        if(description.trim() === "" || amount.trim() || date.trim())
+        if(description.trim() === "" || amount.trim() ==="" || date.trim() ==="" )
             throw new Error("Por favor, preencha todos os campos")
     },
 
@@ -174,7 +175,7 @@ const Form = {
 
 const App = {
     init(){
-        transactions.forEach((transaction,index) =>{
+        Transaction.all.forEach((transaction,index) =>{
             DOM.addTransaction(transaction,index)
         })
         
