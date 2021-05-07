@@ -1,6 +1,6 @@
 # devfinances
 
-## Você pode acessar esse projeto online [Clicando aqui](https://zen-euler-592a3b.netlify.app/)
+## Você pode acessar esse projeto online [Clicando aqui](https://zen-euler-592a3b.netlify.app/) (abrirá na mesma guia)
 
 
 ## Imagens do projeto
